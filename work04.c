@@ -2,6 +2,7 @@
 int main(void)
 {
     int x,y,z=1,m=0;
+    printf("Enter:\n");
     scanf("%d",&y);
     for(x=1;x<=y;x++){
        z=x*z;
