@@ -1,14 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 #define n 10
 int findmin(int a[n])
 {
-    
-    int i,  x, y, z;
-    
-    for (i = 0; i <=n; i++)
+
+    int i, x, y, z;
+
+    for (i = 0; i <= n; i++)
     {
         x = a[0];
-        y = a[i+1];
+        y = a[i + 1];
         if (x > y)
         {
             z = y;
@@ -17,7 +17,6 @@ int findmin(int a[n])
         {
             z = x;
         }
-        
     }
     return z;
 }
@@ -29,5 +28,5 @@ int main()
     {
         scanf("%d", &a[m]);
     }
-     printf("%d  ",findmin(a));
+    printf("min=%d  ", findmin(a));
 }

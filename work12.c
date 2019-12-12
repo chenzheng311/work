@@ -3,10 +3,10 @@
 int findmin(int a[n])
 {
     int min,i;
-    min=a[1];
+    min=a[0];
     for(i=0;i<n;i++)
     {
-        if(min<a[i]){return min;} else {min=a[i]; return min;}
+        if(min<a[i+1]){return min;} else {min=a[i]; return min;}
     }
 }
 int mian()
