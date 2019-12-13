@@ -4,10 +4,10 @@ int findmin(int a[n])
 {
 
     int i, x, y, z;
-
+    x = a[0];
     for (i = 0; i <= n; i++)
     {
-        x = a[0];
+
         y = a[i + 1];
         if (x > y)
         {
@@ -17,6 +17,7 @@ int findmin(int a[n])
         {
             z = x;
         }
+        x = z;
     }
     return z;
 }
